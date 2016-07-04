@@ -1,0 +1,15 @@
+.header {
+	padding: 36px 0  47px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.logo {
+		display: block;
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Vetka';
+	src: url('../../fonts/Vetka.eot');
+	src: local('☺'), url('../../fonts/Vetka.woff') format('woff'),
+	url('../../fonts/Vetka.ttf') format('truetype'),
+	url('../../fonts/Vetka.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('../../fonts/7fonts.ru_ComfortaaThin.eot');
+	src: local('☺'), url('../../fonts/7fonts.ru_ComfortaaThin.woff') format('woff'),
+	url('../../fonts/7fonts.ru_ComfortaaThin.ttf') format('truetype'),
+	url('../../fonts/7fonts.ru_ComfortaaThin.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('../../fonts/7fonts.ru_ComfortaaRegular.eot');
+	src: local('☺'), url('../../fonts/7fonts.ru_ComfortaaRegular.woff') format('woff'),
+	url('../../fonts/7fonts.ru_ComfortaaRegular.ttf') format('truetype'),
+	url('../../fonts/7fonts.ru_ComfortaaRegular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}

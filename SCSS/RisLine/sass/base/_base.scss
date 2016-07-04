@@ -1,0 +1,51 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: $bg-color;
+}
+a {
+	text-decoration: none;
+}
+::-webkit-input-placeholder,
+:-ms-input-placeholder{ color: #a5a7ae; }
+:-moz-placeholder,
+::-moz-placeholder{
+	color: #a5a7ae;
+	opacity: 1;
+}
+p {
+	margin: 0 0 30px;
+	line-height: 1.6;
+}
+.title-slider {
+	font-family: 'Lato', $font-sans;
+	font-size: $font-size+36;
+	color: $white;
+	margin: 0 0 10px;
+}
+.title {
+	font-size: $font-size+1;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 0 10px 60px;
+	position: relative;
+	margin: 0 0 16px;
+}
+.title:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background: url('../img/sprite.png') no-repeat 0 -15px;
+}
+.clearfix {
+	@include clearfix;
+}
+.container {
+	@include container (1000px, 0 15px);
+	margin: 0 auto;
+}

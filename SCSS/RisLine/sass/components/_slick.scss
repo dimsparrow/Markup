@@ -1,0 +1,37 @@
+button.slick-prev.slick-arrow:before {
+	left: 25%;
+}
+button.slick-next.slick-arrow:before {
+	background-position: 0 -252px;
+	right: 32%;
+}
+button.slick-prev.slick-arrow {
+	right: 40px;
+}
+button.slick-arrow {
+	position: absolute;
+	top: 4%;
+	right: 0;
+	background: #81e4ed ;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: none;
+	font-size: 0;
+	&:before {
+		content: "";
+		background: url('../img/sprite.png') no-repeat 0 -232px;
+		position: absolute;
+		width: 7px;
+		height: 10px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+button.slick-arrow:hover {
+	opacity: 0.8;
+}
+

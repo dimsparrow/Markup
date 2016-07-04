@@ -1,0 +1,38 @@
+.btn-download {
+	position: relative;
+	font-size: 18px;
+	display: inline-block;
+	color: $black;
+	padding: 19px 19px 19px 70px;
+	text-transform: uppercase;
+	background: #80e3ec;
+	background: -webkit-linear-gradient(top, #80e3ec 0%,#33b1cc 99%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#80e3ec),color-stop(99%, #33b1cc));
+	background: linear-gradient(to bottom, #80e3ec 0%,#33b1cc 99%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80e3ec', endColorstr='#33b1cc',GradientType=0 );
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #2aacc8;
+	-webkit-box-shadow: 0 1px 1px #fff inset, 0px 3px 3px #c9dadc;
+	box-shadow: 0 1px 1px #fff inset, 0px 3px 3px #c9dadc;
+	&:hover {
+		color: $white;
+		opacity: 0.8;
+	}
+	&:before {
+		content: "";
+		width: 29px;
+		height: 25px;
+		position: absolute;
+		left: 18px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		background: url('../img/sprite.png') no-repeat 0 -369px;
+	}
+
+}
+
+
+

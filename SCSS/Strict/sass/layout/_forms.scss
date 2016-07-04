@@ -1,0 +1,43 @@
+.form-holder {
+    %form-styles {
+        background: #2d3950;
+        border: 1px solid #83868a;
+        font: 14px/20px $font-sans;
+        color: #a5a7ae;
+        display: block;
+        padding: 10px 12px;
+        width: 100%;
+        border-radius: 3px;
+    }
+    input {
+        &[type="text"],
+        &[type="email"],
+        &[type="password"],
+        &[type="tel"]{
+            @extend %form-styles;
+        }
+        &[type="submit"] {
+            background: none;
+            color: #fff;
+            border: 1px solid #15a4fa;
+            border-radius: 5px;
+            padding: 14px 45px;
+            float: right;
+            cursor: pointer;
+            &:hover {
+                background: rgba(255, 255, 255, .2);
+            }
+            @include media (mobile-small) {
+                float: none;
+            }
+        }
+    }
+    textarea {
+        @extend %form-styles;
+        min-height: 155px;
+        max-height: 255px;  
+    }
+    .row {
+        margin: 0 0 19px;
+    }   
+}

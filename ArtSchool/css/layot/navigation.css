@@ -1,0 +1,36 @@
+.nav {
+	display: none;
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+.nav-menu {
+	background: rgba(61, 64, 65, 0.9);
+}
+.nav-menu li {
+	display: table;
+}
+.nav-menu a {
+	font-weight: 300;
+	color: #cecfcf;
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
+	width: 265px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 18px 25px 18px 43px;
+	border-top: 1px solid #717879;
+	border-bottom: 1px solid #000;
+}
+.nav-menu > li:first-child a {
+	border-top: none;
+}
+.nav-menu > li:last-child a {
+	border-bottom: none;
+}
+.nav-menu a:hover {
+	color: #fb9883;
+	background: #3d4041;
+}

@@ -1,0 +1,20 @@
+#header {
+    @include media(mobile) {
+        padding: 10px 10px 0;
+    }
+}
+.logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url('../img/logo.png') no-repeat;
+    width: 154px;
+    height: 37px;
+    float: left;
+    @include media(mobile) {
+        margin: 5px 0 15px;
+    }
+    a {
+        display: block;
+        height: 100%; 
+    }
+}

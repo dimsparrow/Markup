@@ -1,0 +1,36 @@
+#footer {
+	.container {
+		@include container ( 1140px, 25px 10px 25px);
+	}
+	@include media (mobile-small) {
+		text-align: center;
+	}
+}
+.footer-block {
+	float: left;
+	margin: 10px 0 0;
+	@include media (mobile-small) {
+		float: none;
+	}
+}
+.social-links {
+	float: right;
+	li {
+		display: inline-block;
+		vertical-align: top;
+	}
+	a {
+		background-image: url('../img/icons-sb11b15c069.png');
+		display: block;
+		width: 40px;
+		height: 40px;
+		font-size: 0;
+		line-height: 0;
+		&:hover {
+			opacity: .9;
+		}
+	}
+	@include media (mobile-small) {
+		float: none;
+	}
+}

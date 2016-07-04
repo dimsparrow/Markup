@@ -1,0 +1,20 @@
+.btn {
+	font-size: 14px;
+	font-family: 'Verdana', Geneva, sans-serif;
+	display: inline-block;
+	color: #000;
+	padding: 10px 68px;
+	background: -webkit-gradient(linear, left bottom, left top, from(#f89079), to(#fb9984));
+	background: -webkit-linear-gradient(bottom, #f89079, #fb9984);
+	background: linear-gradient(to top, #f89079, #fb9984);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #f36049;
+	-webkit-box-shadow: 1px 1px 3px #fff inset, 1px 1px 3px #f36049;
+	box-shadow: 1px 1px 3px #fff inset, 1px 1px 2px #f36049;
+}
+.btn:hover {
+	opacity: 0.9;
+	color: #fff;
+}
+

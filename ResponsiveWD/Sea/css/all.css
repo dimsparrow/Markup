@@ -1,0 +1,510 @@
+body {
+	margin: 0;
+	font: 14px/20px  Arial, Helvetica, sans-serif;
+	color: #4c505d;
+	background: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+
+header,
+footer,
+article,
+section,
+hgroup,
+nav,
+figure,
+aside,
+main {
+	display:block;
+}
+
+p {
+	margin: 0 0 20px;
+
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border-style: none;
+	vertical-align: top;
+}
+
+
+.clearfix:before,
+.clearfix:after{
+	content:'';
+	display:table;
+}
+.clearfix:after{clear:both;}
+
+ul,ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+dl, dd {
+	margin: 0;
+} 
+
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none; 
+}
+
+input,
+textarea,
+select{
+	vertical-align:middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+	max-width: 962px; 
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+.wrapper {
+	padding: 87px 0 0;
+}
+
+#header {
+	background: #4c97a2;
+	z-index: 9999;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 28px 0;
+}
+
+
+
+.logo {
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url('../img/logo.png') no-repeat;
+	width: 180px;
+	height: 31px;
+	float: left;
+
+}
+.logo a {
+	display: block;
+	height: 100%;
+}
+
+
+#nav {
+	float: right;
+	font: 18px/22px  Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	margin: 10px 0 0;
+
+}
+
+#nav>ul>li {
+	float: left;
+	margin: 0 30px;
+	position: relative;
+}
+
+#nav>ul>li:first-child {
+	margin-left: 0;
+
+}
+
+#nav>ul>li:last-child {
+	margin-right: 0;
+
+}
+
+#nav>ul>li:before {
+	content: "";
+	position: absolute;
+	height: 14px;
+	width: 6px;
+	background: url('../img/separator.png') no-repeat;
+	top: 3px;
+	left: -32px;
+}
+
+
+#nav>ul>li:first-child:before {
+	background: none;
+}
+
+
+#nav>ul>li>a {
+	color: #fff;
+	
+}
+
+.visual {
+	position: relative;
+	margin: 0 0 78px;
+}
+
+.visual img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.visual article{
+	position: relative;
+
+}
+
+.visual  .text-block {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 35%;
+	margin: 0 auto;
+	text-align: center;
+	width: 550px;
+
+}
+
+.visual  h1 {
+	font-size: 40px;
+ 	line-height: 48px;
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	margin: 0 0 10px; 
+}
+
+.visual  .button {
+	background: none;
+	color: #fff;
+	font-size: 28px;
+	line-height: 34px;
+	border: 4px solid #afb1b4;
+	border-radius: 10px;   
+	padding: 12px 40px;
+	display: inline-block;
+}
+
+
+.intro {
+	text-align:center;
+	margin:0 0 80px;
+}
+
+
+.intro .container {
+	padding: 0 25px;
+}
+
+.intro >ul> li {
+	padding: 80px 0;
+}
+
+.intro .text-block {
+	margin: 0 0 130px;
+
+}
+
+.intro .text-title {
+	font-size: 28px;
+	line-height: 34px;
+	max-width: 640px;
+	margin: 0 auto 20px;
+
+}
+
+
+.intro .link li {
+	padding: 0;
+	display: inline-block;
+	margin: 0 0 0 45px;
+
+}
+
+.intro .link li:first-child {
+	margin-left: 0;
+}
+
+.intro .link a {
+	display: block;
+}
+
+
+.testimonial {
+	background: #00d089;
+	padding: 90px 0 60px;
+	color: #fff;
+
+}
+
+.testimonial .container {
+	padding: 0 30px;
+}
+
+.testimonial  .testimonial-block  {
+	margin: 0 0 55px;
+	text-align: center;
+
+}
+
+.testimonial  .testimonial-block  img {
+	display: inline-block;
+	vertical-align: middle;
+
+
+}
+
+.testimonial-title {
+	font-size: 26px;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 25px;
+}
+
+.contact-section {
+	background: #4c97a3;	
+	padding: 50px 0 30px;
+}
+
+.contact-section .circle {
+	width: 430px;
+	height: 430px; 
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #e4f0f1;
+	background: #e4f0f1;
+	border-radius: 50%;
+}
+
+.contact-section form {
+	margin: 110px 0 0;
+	font-size: 14px;
+	padding: 0px 40px;
+}
+
+.contact-section .row {
+	margin: 0 0 12px;
+}
+  
+ .contact-section .row  input,
+ .contact-section .row  textarea{
+	width: 100%;
+	padding: 10px 12px;
+	color: #a5a7ae;
+	font: 14px/20px  Arial, Helvetica, sans-serif;
+	border: 1px solid #d8d8d8;
+}
+ .contact-section .row  textarea {
+ 	max-width: 350px;
+ 	min-height: 40px;
+ 	max-height: 80px;
+ }
+
+#footer {
+	background: #00d089;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+} 
+
+.footer-holder {
+	padding: 12px;
+
+	
+}
+
+.footer-holder  p {
+	margin-bottom: 10px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	display: none;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #69728c;
+}
+
+
+
+.bx-pager-item {
+	display: inline-block;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	border-radius: 5px;
+}
+
+
+.bx-pager {
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	z-index: 9998;
+
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+	background: #000;
+}
+
+
+@media only screen and (max-width: 1024px) {
+#nav {
+	font-size: 11px;
+	line-height: 14px;
+}
+
+.visual h1 {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+#header {
+	position: relative;
+}
+
+.wrapper {
+	padding-top: 0;
+}
+
+.visual h1 {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.visual .button {
+	font-size: 24px;
+	line-height: 29px;
+	padding: 6px 20px;
+}
+
+.visual  .text-block {
+	width: auto;
+
+}
+
+.visual .button {
+	font-size: 14px;
+	line-height: 17px;
+	border: none;
+	padding: 0;
+}
+
+.logo {
+	float: none;
+	margin: 0 auto 10px;
+	display: block;
+	width: 90px;
+	height: 15px;
+	background-size: 90px 15px;
+}
+
+#nav {
+	float: none;
+	text-align: center
+}
+
+ #nav>ul>li {
+	float: none;
+	display: inline-block;
+}
+
+#header .container{
+	position: relative;
+}
+
+.intro .text-block {
+	margin: 0 0 30px;
+}
+
+}
+
+@media only screen and (max-width: 480px) { 
+
+#nav>ul>li {
+	display: block;
+	margin: 0; 
+}
+
+
+.bx-pager {
+	display: none;
+}
+
+.visual .text-block {
+ 	bottom: 15%;
+}
+
+.contact-section .circle {
+	height: auto;
+	width: auto; 
+	border: none; 
+	background: none; 
+}
+
+
+.contact-section form {
+	margin-top: 0; 
+}
+
+.intro .link li {
+	display: block; 
+	margin: 0 auto 10px;
+}
+
+.testimonial .testimonial-block img {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.testimonial-title {
+	display: block;
+	margin: 0 auto;
+}
+
+.intro .link a {
+  display: inline-block;
+
+}
+

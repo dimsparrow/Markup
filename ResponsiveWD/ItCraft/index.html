@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>task-1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Lato%7CMontserrat" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link href="css/all.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<h1 class="heading">Request a demo</h1>
+		<form action="http://itcraft.com.ua/html-css-internship-2016-0439599340/form-controller.php" class="contact-form" method="post" novalidate="novalidate">
+			<fieldset>
+				<div class="row clearfix">
+					<div class="column">
+						<label for="text-field-1">First Name</label>
+						<input type="text" id="text-field-1" name="form_data[first_name]" />
+					</div>
+					<div class="column">
+						<label for="text-field-2">Last Name</label>
+						<input type="text" id="text-field-2" name="form_data[last_name]" />
+					</div>
+				</div>
+				<div class="row clearfix">
+					<div class="column">
+						<label for="email-field">Email *</label>
+						<input type="email" id="email-field" name="form_data[email]" />
+					</div>
+					<div class="column">
+						<label for="tel-field-1">Phone Number</label>
+						<div class="group-tel clearfix">
+							<input type="tel" id="tel-field-1" class="phone-country" name="form_data[phone][country]" />
+							<input type="tel" id="tel-field-2" class="phone-code" name="form_data[phone][code]" />
+							<input type="tel" id="tel-field-3" class="phone-number" name="form_data[phone][number]" />
+						</div>
+					</div>
+				</div>
+				<div class="row clearfix">
+					<div class="column">
+						<label for="search-field">School/Organization *</label>
+						<div class="school">
+							<input type="search" id="search-field" class="school-organization" name="form_data[school_organization]" />
+						</div>
+					</div>
+					<div class="column">
+						<label for="text-field-3">Role on Campus *</label>
+						<input type="text" id="text-field-3" name="form_data[role]" />
+					</div>
+				</div>
+				<div class="row-textarea">
+					<label for="textarea-field" >What are your goals for DemoSystem? *</label>
+					<textarea id="textarea-field" rows="8" cols="5" name="form_data[goals]"></textarea>
+				</div>
+				<div class="row-checkbox clearfix">
+					<input type="checkbox" id="checkbox-field" class="checkbox" checked="checked" />
+					<label for="checkbox-field">I agree to the DemoSystem <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+				</div>
+				<div class="row clearfix">
+					<input type="submit" value="Submit" />
+					<input type="reset" value="Cancel" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.main-menu {
+	padding: 9px 18px 0 0;
+	> li {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 0 0 14px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	a {
+		color: $font-color;
+		padding: 8px 27px 12px 12px;
+		display: block;
+		border-top: 5px solid $bg-color;
+		font-weight: bold;
+		text-transform: uppercase;
+		&:hover {
+			background: $white;
+			border-color: $blue;
+			color: $blue;
+		}
+	}
+	ul {
+		display: none;
+		padding: 0 6px;
+		background: $white;
+		position: absolute;
+		z-index: 5;
+		left: -1px;
+		width: 197px;
+	}
+	li:hover ul {
+		display: block;
+		border: 1px solid #e8ebf1;
+		-webkit-box-shadow: 0 5px 0px 0px $blue;
+		box-shadow: 0 5px 0px 0px $blue;
+		a {
+			text-transform: none;
+			font-weight: normal;
+			border-top: none;
+			border-top: 1px solid #e7e7e7;
+		}
+		li:first-child a {
+			border-top: none;
+		}
+	}
+	li:hover  > a {
+		background: $white;
+		border-color: $blue;
+		color: $blue;
+	}
+	.drop:after {
+		content: "";
+		position: absolute;
+		background: url('../img/sprite.png') no-repeat 0 0;
+		width: 7px;
+		height: 5px;
+		right: 10px;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+}
+
+

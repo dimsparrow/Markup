@@ -1,0 +1,49 @@
+.header {
+	background: rgba(61, 64, 65, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	padding: 13px 0;
+}
+.header .container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-right: 145px;
+	padding-left: 70px;
+}
+.logo {
+	display: block;
+}
+.logo a {
+	display: block;
+	height: 100%;
+}
+.contacts  {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+}
+.contacts > div {
+	padding: 0 0 8px;
+	position: relative;
+}
+.contacts > div:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -42px;
+	background: url('../../images/sprite.png') no-repeat;
+	width: 23px;
+	height: 21px;
+}
+.contacts .adress:before {
+	background-position: 0 -28px;
+}
