@@ -1,0 +1,29 @@
+{% extends '../layout/_layout.twig' %}
+
+{% block styles %}
+	{{ parent() }}
+	<link rel="stylesheet" href="">
+{% endblock %}
+
+{% block title %}
+	Homepage
+{% endblock %}
+
+{% block content %}
+	<div class="holder-slider top-slider-block">
+		{% include '../layout/modules/slider.twig' with {gal: includes.galleryTop} %}
+	</div>
+
+	{% include '../layout/modules/popular-block.twig' %}
+
+	<div class="holder-slider bottom-slider-block">
+		{% include '../layout/modules/slider.twig' with {gal: includes.galleryBottom} %}
+	</div>
+
+	{% include '../layout/modules/featured-block.twig' %}
+{% endblock %}
+
+{% block footerBottom %}
+	{% include '../layout/modules/footer-bottom.twig' %}
+{% endblock %}
+

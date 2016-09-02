@@ -1,0 +1,33 @@
+<ul class="{{gal.class}}">
+	{% for i in gal.images %}
+		<li>
+			<div class="img-holder">
+				<img src="img/{{i.url}}" width="1200" height="481" alt="image description">
+			</div>
+			<div class="title-slide">
+				{{i.titleS}}
+			</div>
+			<div class="text-block">
+				<div class="title">
+					<h2>{{i.title}}</h2>
+					<p>{{i.descriptionT}}</p>
+				</div>
+				<div class="offer">
+					<p>{{i.description}}
+						<a href="#"> {{i.textL}}</a>
+					</p>
+				</div>
+			</div>
+		</li>
+	{% endfor %}
+</ul>
+<div class="{{gal.dots}}">
+	<button class="{{gal.prev}}"></button>
+	<button class="{{gal.next}}"></button>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<div class="popular">
+	<div class="container">
+		<div class="holder-see">
+			<div class="see-block">
+				<div class="title-img"></div>
+				<h4>Popular Must See Attractions</h4>
+				<ul class="slider-popular">
+					{% for i in sliderPopular %}
+						<li>
+							<div class="img-holder">
+								<img src="img/{{i.url}}" width="409"  heigth="260" alt="image description">
+							</div>
+							<div class="text-block">
+								<h3>{{i.titleH}}</h3>
+								<div class="title">{{i.title}}</div>
+								<p>{{i.description}}</p>
+								<a href="#" class="btn">LEARN MORE</a>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+				<div class="{{dots}}">
+					<button class="{{prev}}"></button>
+					<button class="{{next}}"></button>
+				</div>
+			</div>
+		</div>
+		<div class="popular-block">
+			<h4>Popular Must See</h4>
+			<div class="accordion">
+				{% for i in titles %}
+					<h5>{{i.titleH}}</h5>
+					<div class="accord-block">
+						<div class="img-block">
+							<div class="img-holder">
+								<img src="{{i.img}}" width="136"  heigth="127" alt="image description">
+							</div>
+						</div>
+						<div class="text-block">
+							<div class="title">{{i.title}}</div>
+							<p>{{i.description}}</p>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

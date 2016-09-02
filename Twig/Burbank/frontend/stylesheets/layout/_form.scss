@@ -1,0 +1,129 @@
+.book-form {
+	padding: 5px;
+	width: 220px;
+	background: $white;
+	display: none;
+	position: absolute;
+	bottom: -3px;
+	right: 0;
+	.title-form {
+		width: 100%;
+	}
+	.row {
+		border-bottom: 1px solid #f2f2f2;
+		position: relative;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	input[type="text"], label {
+		padding: 22px 50px 22px 20px;
+		display: block;
+	}
+	input[type="text"] {
+		width: 100%;
+		border: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		&:focus,
+		&:valid {
+			outline: 0;
+			& ~ label {
+				span{
+					-webkit-transform: scale(0);
+					-ms-transform: scale(0);
+					transform: scale(0);
+				}
+			}
+		}
+	}
+	label {
+		font-size: 16px;
+		font-family: 'Conv_AgendaMedium', Helvetica, sans-serif;
+		color: #4f4c4d;
+		text-transform: none;
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		&:hover {
+			color: #ff9b4b;
+		}
+		span {
+			-webkit-transition: -webkit-transform .3s ease;
+			transition: -webkit-transform .3s ease;
+			transition: transform .3s ease;
+			transition: transform .3s ease, -webkit-transform .3s ease;
+			will-change: transform;
+			-webkit-transform-origin: 0 50%;
+			-ms-transform-origin: 0 50%;
+			transform-origin: 0 50%;
+			display: inline-block;
+		}
+		&:after {
+			content: '\e900';
+			font-family: 'icomoon' !important;
+			font-size: 24px;
+			position: absolute;
+			top: 50%;
+			right: 19px;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+	}
+	.row-submit {
+		position: relative;
+		&:before {
+			content: '\f002';
+			font: 24px/28px 'FontAwesome';
+			position: absolute;
+			left: 16px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: #ae56f4;
+		}
+	}
+	input[type="submit"] {
+		width: 100%;
+		background: $purple;
+		border: none;
+		padding: 20px 20px 20px 60px;
+		text-align: left;
+		color: $white;
+		font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+	.title-form a {
+		position: relative;
+		display: block;
+		background: #ff9b4b;
+		padding: 20px 20px 20px 60px;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: $white;
+		font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		&:before {
+			content: '\e900';
+			font-family: 'icomoon' !important;
+			font-size: 24px;
+			position: absolute;
+			top: 50%;
+			left: 16px;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: #ffff96;	}
+	}
+}

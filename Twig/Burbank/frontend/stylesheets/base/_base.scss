@@ -1,0 +1,44 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: $bg-color;
+}
+.wrapper {
+	position: relative;
+	padding: 0 0 34px 0;
+}
+h2 {
+	font-size: $font-size+22;
+	font-weight: bold;
+	margin: 0 0 10px;
+}
+h3 {
+	font-size: 28px;
+	margin: 0 0 10px;
+	font-family: 'Conv_AgendaBold', Helvetica, sans-serif;
+	color: #f7955b;
+}
+h4 {
+	font-size: 18px;
+	color: #2a4a84;
+	text-transform: uppercase;
+	font-family: 'Conv_HelveticaLTStd-Bold', Helvetica, sans-serif;
+}
+h5 {
+	font-size: 16px !important;
+	font-family: 'Conv_HelveticaLTStd-Roman', Helvetica, sans-serif;
+	text-shadow: 1px 1px 1px #dfdfdf;
+}
+p {
+	font-family: 'Conv_HelveticaLTStd-Roman', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #4e4e4e;
+}
+.clearfix {
+	@include clearfix;
+}
+.container {
+	@include container (920px, 0 10px);
+	margin: 0 auto;
+}
