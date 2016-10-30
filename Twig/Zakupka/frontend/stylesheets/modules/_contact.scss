@@ -1,0 +1,76 @@
+.contact-holder {
+	font-size: $font-size+2;
+	.title {
+		color: #fff;
+		background: $color-str;
+		border-radius: 5px 5px 0 0;
+		text-align: center;
+		font-size: $font-size+4;
+		padding: 14px;
+		margin: 0 0 18px;
+	}
+	.contact-section {
+		padding: 12px 0;
+		border-bottom: 1px solid #e2e2e2;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.btn-vip {
+		margin-right: 8px;
+	}
+	.shop-name {
+		font-size: $font-size+4;
+		margin: 0 0 10px;
+	}
+	.holder-row {
+		margin: 0 0 5px;
+	}
+	.tel-icon, .fa-envelope-o, .fa-skype {
+		float: left;
+	}
+	.holder-text {
+		overflow: hidden;
+	}
+	.tel-number {
+		display: block;
+		margin: 0 0 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.adress {
+		a {
+			color: $color-str;
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+	dl {
+		margin: 0 0 5px 0;
+		dt, dd {
+			display: inline-block;
+		}
+	}
+	.btn-mail-holder {
+		text-align: center;
+	}
+}
+
+@include media (desktop) {
+	.search-holder {
+		input {
+			font-size: 12px;
+		}
+	}
+	.rating {
+		display: block;
+		padding: 5px 0;
+	}
+	.btn-mail {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+}
